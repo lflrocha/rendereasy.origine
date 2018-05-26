@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False">
+
+ <object name="rendereasy_origine_assets"
+    meta_type="Filesystem Directory View"
+    directory="rendereasy.demo:skins/rendereasy_origine_assets"/>
+ <object name="rendereasy_origine_templates"
+    meta_type="Filesystem Directory View"
+    directory="rendereasy.demo:skins/rendereasy_origine_templates"/>
+
+ <skin-path name="RenderEasy Origine" based-on="Sunburst Theme">
+  <layer name="rendereasy_origine_assets"
+     insert-after="custom"/>
+  <layer name="rendereasy_origine_templates"
+     insert-after="rendereasy_origine_assets"/>
+ </skin-path>
+
+</object>

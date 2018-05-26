@@ -1,0 +1,46 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="rendereasy.origine">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".foto.Foto">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IFoto"
+        />
+  </class>
+  <class class=".coluna.Coluna">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IColuna"
+        />
+  </class>
+  <class class=".perguntaresposta.PerguntaResposta">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IPerguntaResposta"
+        />
+  </class>
+  <class class=".album.Album">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IAlbum"
+        />
+  </class>
+  <class class=".indicadores.Indicadores">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IIndicadores"
+        />
+  </class>
+  <class class=".vinheta.Vinheta">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IVinheta"
+        />
+  </class>
+
+</configure>
